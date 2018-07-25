@@ -16,12 +16,12 @@ class Fund extends \Adyen\Service
     {
         parent::__construct($client);
 
-        $this->_payoutAccountHolder = new \Adyen\Service\ResourceModel\Fund\payoutAccountHolder($this);
-        $this->_accountHolderBalance = new \Adyen\Service\ResourceModel\Fund\accountHolderBalance($this);
-        $this->_accountHolderTransactionList = new \Adyen\Service\ResourceModel\Fund\accountHolderTransactionList($this);
-        $this->_refundNotPaidOutTransfers = new \Adyen\Service\ResourceModel\Fund\refundNotPaidOutTransfers($this);
-        $this->_setupBeneficiary = new \Adyen\Service\ResourceModel\Fund\setupBeneficiary($this);
-        $this->_transferFunds = new \Adyen\Service\ResourceModel\Fund\transferFunds($this);
+        $this->_payoutAccountHolder = new \Adyen\Service\ResourceModel\Fund\PayoutAccountHolder($this);
+        $this->_accountHolderBalance = new \Adyen\Service\ResourceModel\Fund\AccountHolderBalance($this);
+        $this->_accountHolderTransactionList = new \Adyen\Service\ResourceModel\Fund\AccountHolderTransactionList($this);
+        $this->_refundNotPaidOutTransfers = new \Adyen\Service\ResourceModel\Fund\RefundNotPaidOutTransfers($this);
+        $this->_setupBeneficiary = new \Adyen\Service\ResourceModel\Fund\SetupBeneficiary($this);
+        $this->_transferFunds = new \Adyen\Service\ResourceModel\Fund\TransferFunds($this);
 
     }
 
